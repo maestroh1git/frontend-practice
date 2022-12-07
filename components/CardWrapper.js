@@ -4,23 +4,30 @@ import styled from "styled-components";
 
 // Define the CardWrapper component using the styled() function
 const CardWrapper = styled.div`
-background-color: white;
+  background-color: white;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px;
 `;
 // Define the heading styles
 const Heading = styled.h3`
-font-color: black;
-  font-size: 1.2em;
-  margin: 10px 0;
+  margin: 20px;
 `;
+
+
+const Icon = styled.img`
+width: 271px;
+height:342px;
+
+`
+
 
 function CardWrapperInstance(props) {
   const { wrapperTitle, children } = props;
 
   return (
     <CardWrapper>
+      <Icon src="/Check.svg"/>
       <Heading>{wrapperTitle}</Heading>
       {children}
     </CardWrapper>

@@ -6,16 +6,14 @@ import CardInstance from "../components/Card";
 
 export default function Home() {
   return (
-    <CardWrapperInstance wrapperTitle= "Community Link">
+    <CardWrapperInstance wrapperTitle= "Community Link Card">
       <CardInstance
-        title="Card1"
-        description="Card first Description"
-        image="https://placekitten.com/200/300"
+        title="Decentraland"
+        description="The first decentralized metaverse that is built, governed, and owned by its users."
       />
       <CardInstance
-        title="Card2"
-        description="Card second Description"
-        image="https://placekitten.com/300/400"
+        title="Decentraland"
+        description="The first decentralized metaverse that is built, governed, and owned by its users."
       />
     </CardWrapperInstance>
   );
