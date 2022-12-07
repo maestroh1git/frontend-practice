@@ -16,19 +16,18 @@ const Heading = styled.h3`
 
 
 const Icon = styled.img`
-width: 271px;
-height:342px;
-
+width: 16px;
+height: 16px;
+margin-left: 5px;
 `
 
 
 function CardWrapperInstance(props) {
-  const { wrapperTitle, children } = props;
+  const { wrapperTitle, image, children } = props;
 
   return (
     <CardWrapper>
-      <Icon src="/Check.svg"/>
-      <Heading>{wrapperTitle}</Heading>
+      <Heading>{wrapperTitle}<Icon src={image}/></Heading>
       {children}
     </CardWrapper>
   );

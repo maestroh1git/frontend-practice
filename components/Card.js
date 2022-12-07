@@ -9,10 +9,8 @@ const Card = styled.div`
   height: fit-content;
   border: 1px solid #e7eaee;
   border-radius: 16px;
-
   margin: 20px;
   display: inline-block;
-
 `;
 
 // Define the image styles
@@ -26,7 +24,6 @@ const Description = styled.p`
   font-size: 13px;
   line-height: 140%;
   letter-spacing: -0.003em;
-
   color: black;
 `;
 
@@ -40,7 +37,6 @@ const Heading = styled.h3`
   font-weight: 600;
   font-size: 15px;
   line-height: 145%;
-
   letter-spacing: -0.009em;
   color: black;
 `;
@@ -71,15 +67,29 @@ const Button = styled.button`
   gap: 4px;
 `;
 
+const HeadingIcon = styled.img`
+width: 16px;
+height: 16px;
+margin-right: 4px;
+top: 3px;
+position: relative;
+`
+const ButtonIcon = styled.img`
+width: 16px;
+height: 16px;
+margin-right: 4px;
+position: relative;
+`
+
 function CardInstance(props) {
-  const { userCount, interactions, description, title } = props;
+  const { userCount, interactions, description, title, headingImage, buttonImage } = props;
 
   return (
     <Card>
-      <Heading>{title}</Heading>
+      <Heading><HeadingIcon src={headingImage}/>{title}</Heading>
       <Description>{description}</Description>
       <Paragraph>{"icon Stats icon stats"}</Paragraph>
-      <Button>{"View community"}</Button>
+      <Button><ButtonIcon src={buttonImage}/>{"View community"}</Button>
     </Card>
   );
 }
