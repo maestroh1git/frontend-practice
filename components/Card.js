@@ -7,6 +7,7 @@ import {
   Description,
   Button,
   ButtonIcon,
+  Label,
   Stats,
   StatsIcon,
 } from "../styles/card-styles.js";
@@ -32,16 +33,16 @@ function CardInstance(props) {
         {title}
       </Title>
       <Description>{description}</Description>
+      <Label>
       <Stats>
-        <>
           <StatsIcon src={groupIcon} />
           {groupStat}
-        </>
-        <>
+      </Stats>
+      <Stats>
           <StatsIcon src={activityIcon} />
           {activityStat}
-        </>
       </Stats>
+      </Label>
       <Button>
         <ButtonIcon src={buttonIcon} />
         {buttonText}

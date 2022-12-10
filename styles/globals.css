@@ -21,6 +21,10 @@ a {
   color-scheme: dark;
 }
 
+span: first-child {
+  margin-right: 20px;
+}
+
 @media (prefers-color-scheme: white) {
   html {
     color-scheme: dark;

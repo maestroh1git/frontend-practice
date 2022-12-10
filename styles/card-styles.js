@@ -15,7 +15,7 @@ export const Card = styled.div`
 export const Description = styled.p`
   width: 235px;
   height: 36px;
-  margin: 10px;
+  margin: 0px 12px 12px 12px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -29,7 +29,7 @@ export const Description = styled.p`
 export const Title = styled.h3`
   width: 251px;
   height: 22px;
-  margin: 10px;
+  margin: 10px 12px 0px 12px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -44,15 +44,22 @@ export const Stats = styled.span`
   font-size: 0.9em;
   word-spacing: 10px;
   color: inherit;
-  margin: 10px;
+  margin-left: 12px;
   display: flex;
   justify-content: flex-start;
+`;
+
+export const Label = styled.span`
+  font-size: 0.9em;
+  word-spacing: 10px;
+  color: inherit;
+  margin-right: 16px;
+  display: flex;
 `;
 
 export const StatsIcon = styled.img`
   width: 16px;
   height: 16px;
-  margin-right: 4px;
   position: relative;
 `;
 
@@ -60,7 +67,7 @@ export const StatsIcon = styled.img`
 export const Button = styled.button`
   background-color: #ec4d57;
   color: white;
-  margin: 10px;
+  margin: 12px;
   border: none;
   display: flex;
   flex-direction: row;
