@@ -10,7 +10,7 @@ import {
   Label,
   Stats,
   StatsIcon,
-} from "../styles/card-styles.js";
+} from "./card-styles.js";
 
 function CardInstance(props) {
   const {
