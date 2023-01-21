@@ -29,7 +29,7 @@ export const DetailsDescription = styled.p`
 
 //phone ui
 export const PhoneWrapper = styled.div`
-background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   position: fixed;
   top: 20%;
   left: 16%;
@@ -39,14 +39,14 @@ background-color: hsl(0, 0%, 100%);
   box-shadow: 20px 20px 600px grey;
 `;
 export const Phone = styled.div`
-// background-color: hsl(270, 20%, 96%);
-background-color: yellow;
+  // background-color: hsl(270, 20%, 96%);
+  background-color: yellow;
 
-
-border-radius: 20px;
-padding: 20px;
-height: 420px;
-width: 270px;`;
+  border-radius: 20px;
+  padding: 20px;
+  height: 420px;
+  width: 270px;
+`;
 export const PhoneNotch = styled.div``;
 export const PhoneProfileWrapper = styled.div``;
 export const PhoneProfile = styled.div``;
