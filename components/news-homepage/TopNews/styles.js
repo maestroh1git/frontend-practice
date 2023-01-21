@@ -21,8 +21,8 @@ height: fit-content;
 display: flex;
 justify-content: space-between;`
 export const NewsImage = styled.img`
-height: 64%;
-width: 38%;
+height: 300px;
+width: 100%;
 padding-right: 20px;
 `
 export const NewsText = styled.div`
