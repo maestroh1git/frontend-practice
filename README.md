@@ -18,7 +18,7 @@ You can start editing the cards by modifying `components/card.js` and `component
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-It was based on the [Community Card Link](https://www.figma.com/file/WQZcp6S0EnzxdTL4taoKDv/Design-System?node-id=11182%3A147560&t=iISDBbsNebyVBj1y-1).
+It was based on the [News Homepage](https://www.figma.com/file/sEQJXKYffhvCPA3tEEyFxD/news-homepage?node-id=0%3A1&t=0FkXB7R5TAKjWbvg-1).
 
 ![Finished Image](./Finished.png)
 
