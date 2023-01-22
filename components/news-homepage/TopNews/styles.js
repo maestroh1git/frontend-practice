@@ -19,7 +19,7 @@ export const News = styled.div`
 // width: auto;
 height: fit-content;
 display: flex;
-justify-content: space-between;`
+`
 export const NewsImage = styled.img`
 height: 230px;
 width: 190px;
