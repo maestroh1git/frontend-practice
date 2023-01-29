@@ -24,11 +24,11 @@ const CarouselCard = styled.div`
   flex-direction: column;
   width: 255px;
   height: 335px;
- @media(min-width: 770px) {
-  &:nth-child(even) {
-    top: 48px;
+  @media (min-width: 770px) {
+    &:nth-child(even) {
+      top: 48px;
+    }
   }
- }
   @media (max-width: 768px) {
     flex-direction: row;
     width: 515px;
@@ -88,49 +88,49 @@ const CardDescription = styled.p`
   color: #777f98;
 `;
 
+const carouselData = [
+  {
+    index: 0,
+    image: "./images/passion.svg",
+    heading: "Indulge your passions",
+    description:
+      "Your passions shouldn't be just for the weekend. Earn a living doing what you love.",
+  },
+  {
+    index: 1,
+    image: "./images/finance.svg",
+    heading: "Gain financial freedom",
+    description:
+      "Start making money work for you. There’s nothing quite like earning while you sleep.",
+  },
+  {
+    index: 2,
+    image: "./images/lifestyle.png",
+    heading: "Choose your lifestyle",
+    description:
+      "Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.",
+  },
+  {
+    index: 3,
+    image: "./images/work.svg",
+    heading: "Work from anywhere",
+    description:
+      " Selling online means not being pinned down. Want to work AND travel? Go for it!",
+  },
+];
+
 export default function Carousel() {
   return (
     <CarouselWrapper>
-      <CarouselCard index={0}>
-        <CardImage src={"./images/passion.svg"} />
-        <CardContent>
-          <CardHeading>Indulge your passions</CardHeading>
-          <CardDescription>
-            Your passions shouldn't be just for the weekend. Earn a living doing
-            what you love.
-          </CardDescription>
-        </CardContent>
-      </CarouselCard>
-      <CarouselCard index={1}>
-        <CardImage src={"./images/finance.svg"} />
-        <CardContent>
-          <CardHeading>Gain financial freedom</CardHeading>
-          <CardDescription>
-            Start making money work for you. There’s nothing quite like earning
-            while you sleep.{" "}
-          </CardDescription>
-        </CardContent>
-      </CarouselCard>
-      <CarouselCard index={2}>
-        <CardImage src={"./images/lifestyle.png"} />
-        <CardContent>
-          <CardHeading>Gain financial freedom</CardHeading>
-          <CardDescription>
-            Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
-            your week.
-          </CardDescription>
-        </CardContent>
-      </CarouselCard>
-      <CarouselCard index={3}>
-        <CardImage src={"./images/work.svg"} />
-        <CardContent>
-          <CardHeading>Gain financial freedom</CardHeading>
-          <CardDescription>
-            Selling online means not being pinned down. Want to work AND travel?
-            Go for it!
-          </CardDescription>
-        </CardContent>
-      </CarouselCard>
+      {carouselData.map((data) => (
+        <CarouselCard key={"data"} index={data.index}>
+          <CardImage src={data.image} />
+          <CardContent>
+            <CardHeading>{data.heading}</CardHeading>
+            <CardDescription>{data.description}</CardDescription>
+          </CardContent>
+        </CarouselCard>
+      ))}
     </CarouselWrapper>
   );
 }
