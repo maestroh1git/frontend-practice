@@ -1,26 +1,35 @@
-// import Head from "next/head";
+import Head from "next/head";
 // import Image from "next/image";
-import Navigation from "../components/news-homepage/Navigation";
-// import {Navigation, Hero, TopNews, SideNews} from "../components/news-homepage/Navigation";
-
-import Hero from "../components/news-homepage/Hero";
-import SideNews from "../components/news-homepage/SideNews";
-import {
-  Page,
-  TopSection,
-  BottomSection,
-} from "../components/news-homepage/Containers";
-import TopNews from "../components/news-homepage/TopNews";
 import styles from "../styles/Home.module.css";
+import {
+  Container,
+  Header,
+  Hero,
+  Carousel,
+  Pricing,
+  Footer,
+} from "../components/maker-preLaunch";
 
 export default function Home() {
   return (
-    <Page>
-      <Navigation />
-      <Hero />
-      <SideNews />
-      <TopNews />
-    </Page>
+    <>
+      <Head>
+        <title>Home App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <Container>
+        <Header />
+        <Hero />
+        <Carousel />
+        <Pricing />
+        <Footer />
+      </Container>
+    </>
   );
 }
 
